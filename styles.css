@@ -163,12 +163,12 @@ li {
 }
 
 ul {
-    text-indent: none;
+    text-indent: 0;
     padding-inline-start: 0;
     margin-block-start: 0;
 }
 
-h3 {
+h2 {
     width: fit-content;
     font-size: 1.5rem;
 }
