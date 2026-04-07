@@ -13,7 +13,7 @@
 
     // Variables
     const body = document.querySelector('body');
-    const h3 = document.querySelectorAll('h3');
+    const h2 = document.querySelectorAll('h2');
     const name = document.querySelector('#name');
     const gif = document.querySelector('#gif');
     const links = document.querySelectorAll('li a');
@@ -32,8 +32,8 @@
             // Switch font
             body.style.fontFamily = 'IBM Plex Mono, monospace';
 
-            // Add h3 typing animations
-            h3.forEach(function (h) {
+            // Add h2 typing animations
+            h2.forEach(function (h) {
                 h.classList.add('typing-text');
             });
 
@@ -57,7 +57,7 @@
 
             state = 'digital';
         } else {
-            h3.forEach(h => h.classList.remove('typing-text'));
+            h2.forEach(h => h.classList.remove('typing-text'));
             name.classList.remove('typing-text');
             body.style.fontFamily = 'Caveat';
 
