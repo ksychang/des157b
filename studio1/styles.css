@@ -1,0 +1,78 @@
+body {
+    width: 100vmax;
+    margin: 0;
+    padding: 0;
+    font-family: 'EB Garamond';
+}
+
+video {
+    width: 100vmax;
+    height: 100vmin;
+    object-fit: cover;
+    filter: grayscale(100);
+}
+
+i {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1;
+    color: red;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+#line1 {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+    color: red;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#line2 {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+    color: red;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#line3 {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+    color: red;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#line4 {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+    color: red;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#line5 {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+    color: red;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-style: italic;
+}
