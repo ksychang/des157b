@@ -2,9 +2,15 @@
     'use strict';
     console.log('reading js');
 
+    // Adding sound
+    const audio = new Audio('media/underwater.mp3');
+    audio.loop = true;
+
     const myVideo = document.querySelector('#aquarium');
     const volToggle = document.querySelector('i');
     let muted = true;
+
+    myVideo.volume = 0;
 
     volToggle.addEventListener('click', function () {
         console.log('clicked');
@@ -12,14 +18,12 @@
         if (muted) {
             volToggle.classList.remove('fa-volume-mute');
             volToggle.classList.add('fa-volume-up');
-            myVideo.volume = 1;
-            console.log(myVideo.volume);
+            audio.play();
             muted = false;
         } else {
             volToggle.classList.remove('fa-volume-up');
             volToggle.classList.add('fa-volume-mute');
-            myVideo.volume = 0;
-            console.log(myVideo.volume);
+            audio.pause();
             muted = true;
         }
     });
@@ -38,12 +42,19 @@
 
     const intervalID = setInterval(checkTime, 1000);
 
-    function checkTime() {
+    async function checkTime() {
         for (let i = 0; i < poem.start.length; i++) {
-            if (poem.start[i] <= myVideo.currentTime && poem.stop[i] >= myVideo.currentTime) {
+            if (poem.start[i] < myVideo.currentTime && poem.stop[i] > myVideo.currentTime) {
                 poem.line[i].classList.remove('hidden');
+                poem.line[i].classList.remove('fade-out');
+                poem.line[i].classList.add('visible');
             } else {
-                poem.line[i].classList.add('hidden');
+                if (poem.line[i].classList.contains('visible')) {
+                    poem.line[i].classList.remove('visible');
+                    poem.line[i].classList.add('fade-out');
+                } else {
+                    poem.line[i].classList.add('hidden');
+                }
             }
         }
     }
