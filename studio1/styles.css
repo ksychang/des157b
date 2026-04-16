@@ -106,3 +106,17 @@ i {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     font-style: italic;
 }
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 1%;
+    width: 100%;
+    padding: 10px 0;
+
+}
+
+footer a {
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+}

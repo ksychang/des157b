@@ -13,7 +13,6 @@
     myVideo.volume = 0;
 
     volToggle.addEventListener('click', function () {
-        console.log('clicked');
         changeColors();
         if (muted) {
             volToggle.classList.remove('fa-volume-mute');
