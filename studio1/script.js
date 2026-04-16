@@ -66,11 +66,13 @@
             p.forEach(function (item) {
                 item.style.color = 'white';
             });
+            volToggle.style.color = 'white';
         } else {
             myVideo.style.filter = 'grayscale(100%)';
             p.forEach(function (item) {
                 item.style.color = 'red';
             });
+            volToggle.style.color = 'red';
         }
     }
 
