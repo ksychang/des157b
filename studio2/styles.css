@@ -1,0 +1,154 @@
+.montserrat_100 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+}
+
+body {
+    width: 100vmax;
+    /* height: 100vmin; */
+    background-color: rgb(20, 20, 20);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    color: #fff;
+}
+
+h1 {
+    margin-top: 8vmin;
+}
+
+.dot-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    /* background-color: #fff; */
+    --color: #000000;
+    --back-color1: #000000;
+    --back-color2: #000000;
+    animation: soft-glow 1s ease-in-out infinite alternate;
+}
+
+.dot:hover {
+    animation: glowing 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes soft-glow {
+    from {
+        box-shadow: 0 0 5px var(--back-color1), 0 0 10px var(--back-color1), 0 0 15px var(--back-color1), 0 0 20px var(--back-color1), 0 0 25px var(--back-color1), 0 0 30px var(--back-color1), 0 0 35px var(--back-color1);
+    }
+
+    to {
+        box-shadow: 0 0 5px var(--back-color1), 0 0 10px var(--back-color1), 0 0 15px var(--back-color1), 0 0 20px var(--back-color1), 0 0 25px var(--back-color1), 0 0 30px var(--back-color1), 0 0 35px var(--back-color1);
+    }
+}
+
+@keyframes glowing {
+    from {
+        box-shadow: 0 0 5px var(--back-color1), 0 0 10px var(--back-color1), 0 0 15px var(--back-color1), 0 0 20px var(--back-color1), 0 0 25px var(--back-color1), 0 0 30px var(--back-color1), 0 0 35px var(--back-color1);
+    }
+
+    to {
+        box-shadow: 0 0 5px var(--back-color2), 0 0 10px var(--back-color2), 0 0 15px var(--back-color2), 0 0 20px var(--back-color2), 0 0 25px var(--back-color2), 0 0 30px var(--back-color2), 0 0 35px var(--back-color2);
+    }
+}
+
+#legend {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: absolute;
+    top: 12vmin;
+    left: 10vmax;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.legend-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    animation: glowing 1s ease-in-out infinite alternate;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+#discord {
+    background-color: --color;
+    --color: rgb(180, 157, 236);
+    --back-color1: rgb(76, 0, 255);
+    --back-color2: --color;
+}
+
+#messages {
+    background-color: --color;
+    --color: rgb(194, 222, 208);
+    --back-color1: rgb(41, 169, 107);
+    --back-color2: --color;
+}
+
+#gmail {
+    background-color: --color;
+    --color: rgb(220, 230, 205);
+    --back-color1: rgb(169, 224, 80);
+    --back-color2: --color;
+}
+
+#canvas {
+    background-color: --color;
+    --color: rgb(233, 210, 210);
+    --back-color1: rgb(255, 0, 0);
+    --back-color2: --color;
+}
+
+#instagram {
+    background-color: --color;
+    --color: rgb(229, 205, 232);
+    --back-color1: rgb(221, 0, 255);
+    --back-color2: --color;
+}
+
+#linkedin {
+    background-color: --color;
+    --color: rgb(208, 226, 226);
+    --back-color1: rgb(0, 255, 255);
+    --back-color2: --color;
+}
+
+#calendar {
+    background-color: --color;
+    --color: rgb(228, 228, 205);
+    --back-color1: rgb(255, 255, 0);
+    --back-color2: --color;
+}
+
+#tasks {
+    background-color: --color;
+    --color: rgb(235, 223, 212);
+    --back-color1: rgb(255, 128, 0);
+    --back-color2: --color;
+}
+
+#other {
+    background-color: --color;
+    --color: rgb(210, 223, 233);
+    --back-color1: rgb(0, 140, 255);
+    --back-color2: --color;
+}
