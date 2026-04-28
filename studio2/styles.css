@@ -6,7 +6,7 @@
 }
 
 body {
-    width: 100vmax;
+    width: 99vmax;
     /* height: 100vmin; */
     background-color: rgb(20, 20, 20);
     display: flex;
@@ -67,7 +67,7 @@ h1 {
     flex-direction: column;
     gap: 5px;
     position: absolute;
-    top: 12vmin;
+    top: 20vmin;
     left: 10vmax;
 }
 
@@ -90,65 +90,83 @@ p {
     margin: 0;
 }
 
-#discord {
+.discord {
     background-color: --color;
     --color: rgb(180, 157, 236);
     --back-color1: rgb(76, 0, 255);
     --back-color2: --color;
 }
 
-#messages {
+.messages {
     background-color: --color;
     --color: rgb(194, 222, 208);
     --back-color1: rgb(41, 169, 107);
     --back-color2: --color;
 }
 
-#gmail {
+.gmail {
     background-color: --color;
     --color: rgb(220, 230, 205);
     --back-color1: rgb(169, 224, 80);
     --back-color2: --color;
 }
 
-#canvas {
+.canvas {
     background-color: --color;
     --color: rgb(233, 210, 210);
     --back-color1: rgb(255, 0, 0);
     --back-color2: --color;
 }
 
-#instagram {
+.instagram {
     background-color: --color;
     --color: rgb(229, 205, 232);
     --back-color1: rgb(221, 0, 255);
     --back-color2: --color;
 }
 
-#linkedin {
+.linkedin {
     background-color: --color;
     --color: rgb(208, 226, 226);
     --back-color1: rgb(0, 255, 255);
     --back-color2: --color;
 }
 
-#calendar {
+.calendar {
     background-color: --color;
     --color: rgb(228, 228, 205);
     --back-color1: rgb(255, 255, 0);
     --back-color2: --color;
 }
 
-#tasks {
+.tasks {
     background-color: --color;
     --color: rgb(235, 223, 212);
     --back-color1: rgb(255, 128, 0);
     --back-color2: --color;
 }
 
-#other {
+.other {
     background-color: --color;
     --color: rgb(210, 223, 233);
     --back-color1: rgb(0, 140, 255);
     --back-color2: --color;
+}
+
+/* #tooltip {
+    position: absolute;
+    pointer-events: none;
+    background: black;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 14px;
+
+    opacity: 0;
+    transition: opacity 0.2s;
+} */
+
+footer p {
+    margin-top: 2vmin;
+    font-family: 'Montserrat';
 }

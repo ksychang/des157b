@@ -10,48 +10,51 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
     <h1 class="montserrat_100">
-        notifications on april <span>5</span>, 2026
+        <span id="notifs">0</span> notifications on <span id="day">d</span>
     </h1>
+
+    <div id="tooltip"></div>
 
     <div id="legend">
         <div class="legend-item">
-            <div class="legend-dot" id="discord"></div>
+            <div class="legend-dot discord"></div>
             <p>Discord</p>
         </div>
         <div class="legend-item">
-            <div class="legend-dot" id="messages"></div>
+            <div class="legend-dot messages"></div>
             <p>Messages</p>
         </div>
         <div class="legend-item">
-            <div class="legend-dot" id="gmail"></div>
+            <div class="legend-dot gmail"></div>
             <p>Gmail</p>
         </div>
         <div class="legend-item">
-            <div class="legend-dot" id="canvas"></div>
+            <div class="legend-dot canvas"></div>
             <p>Canvas</p>
         </div>
         <div class="legend-item">
-            <div class="legend-dot" id="instagram"></div>
+            <div class="legend-dot instagram"></div>
             <p>Instagram</p>
         </div>
         <div class="legend-item">
-            <div class="legend-dot" id="linkedin"></div>
+            <div class="legend-dot linkedin"></div>
             <p>LinkedIn</p>
         </div>
         <div class="legend-item">
-            <div class="legend-dot" id="calendar"></div>
+            <div class="legend-dot calendar"></div>
             <p>Calendar</p>
         </div>
         <div class="legend-item">
-            <div class="legend-dot" id="tasks"></div>
+            <div class="legend-dot tasks"></div>
             <p>Tasks</p>
         </div>
         <div class="legend-item">
-            <div class="legend-dot" id="other"></div>
+            <div class="legend-dot other"></div>
             <p>Other</p>
         </div>
     </div>
@@ -602,44 +605,10 @@
         <div class="dot" id="dot510"></div>
     </div>
 </body>
-
-<script>
-    /* The vision:
-    Grid of dots, each dot represents one notification.
-    Date recorded at top of page. Legend for colors of notification app on the left.
-    Move to next day by clicking anywhere on right side of the page.
-    Move to previous day by clicking anywhere on left side of the page.
-    Dots appear randomly depending on the hour in appropriate color.
-
-    Date: 4/5/2026 - 4/11/2026
-
-    constants:
-    maxDots
-    dotsPerRow
-    numRows
-
-    Rows dynamically generated based on maxDots, dotsPerRow, and numRows.
-    */
-
-    // (function () {
-    //     'use strict';
-    //     console.log('reading js');
-    //     // dots = document.querySelectorAll('.dot');
-    //     const maxdots = 380;
-    //     let usedDots = [];
-
-    //     while (usedDots.length < maxdots) {
-    //         let i = Math.floor(Math.random() * 510) + 1;
-    //         if (usedDots.includes(i)) {
-    //             continue;
-    //         }
-    //         usedDots.push(i);
-    //         let dot = document.querySelector(`#dot${i}`);
-    //         let randomColor = Math.floor(Math.random() * 16777215).toString(16);
-    //         dot.style.setProperty('--back-color1', `#${randomColor}`);
-    //         dot.style.backgroundColor = 'white';
-    //     }
-    // })();
-</script>
+<footer>
+    <p class="montserrat_100">
+        Toggle days with arrow keys.
+    </p>
+</footer>
 
 </html>

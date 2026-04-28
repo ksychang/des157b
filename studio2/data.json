@@ -1,0 +1,114 @@
+[
+    {
+        "date": "2026-04-05",
+        "day": "Sunday",
+        "total": 229,
+        "categories": {
+            "messages": 70,
+            "discord": 70,
+            "gmail": 18,
+            "instagram": 11,
+            "tasks": 10,
+            "linkedin": 6,
+            "calendar": 4,
+            "canvas": 2,
+            "other": 38
+        }
+    },
+    {
+        "date": "2026-04-06",
+        "day": "Monday",
+        "total": 376,
+        "categories": {
+            "messages": 116,
+            "discord": 158,
+            "gmail": 30,
+            "instagram": 11,
+            "tasks": 12,
+            "linkedin": 10,
+            "calendar": 18,
+            "canvas": 0,
+            "other": 21
+        }
+    },
+    {
+        "date": "2026-04-07",
+        "day": "Tuesday",
+        "total": 351,
+        "categories": {
+            "messages": 144,
+            "discord": 102,
+            "gmail": 31,
+            "instagram": 12,
+            "tasks": 4,
+            "linkedin": 5,
+            "calendar": 14,
+            "canvas": 11,
+            "other": 28
+        }
+    },
+    {
+        "date": "2026-04-08",
+        "day": "Wednesday",
+        "total": 342,
+        "categories": {
+            "messages": 98,
+            "discord": 139,
+            "gmail": 20,
+            "instagram": 8,
+            "tasks": 2,
+            "linkedin": 5,
+            "calendar": 20,
+            "canvas": 11,
+            "other": 39
+        }
+    },
+    {
+        "date": "2026-04-09",
+        "day": "Thursday",
+        "total": 385,
+        "categories": {
+            "messages": 99,
+            "discord": 185,
+            "gmail": 27,
+            "instagram": 6,
+            "tasks": 4,
+            "linkedin": 5,
+            "calendar": 16,
+            "canvas": 25,
+            "other": 18
+        }
+    },
+    {
+        "date": "2026-04-10",
+        "day": "Friday",
+        "total": 340,
+        "categories": {
+            "messages": 120,
+            "discord": 144,
+            "gmail": 17,
+            "instagram": 9,
+            "tasks": 4,
+            "linkedin": 5,
+            "calendar": 16,
+            "canvas": 0,
+            "other": 25
+        }
+    },
+    {
+        "date": "2026-04-11",
+        "day": "Saturday",
+        "total": 222,
+        "categories": {
+            "messages": 88,
+            "discord": 68,
+            "gmail": 12,
+            "instagram": 3,
+            "tasks": 6,
+            "linkedin": 4,
+            "calendar": 14,
+            "canvas": 1,
+            "other": 26
+        }
+    }
+]
