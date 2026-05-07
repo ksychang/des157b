@@ -1,0 +1,109 @@
+body {
+    font-family: 'Instrument Serif';
+    font-size: 40pt;
+}
+
+.section {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+}
+
+.section .active {
+    padding: 0;
+}
+
+h1,
+h2 {
+    width: 100vmax;
+    text-align: center;
+    left: 0;
+}
+
+#lost {
+    position: absolute;
+    top: 20vmin;
+    color: #121212;
+}
+
+#generation {
+    position: absolute;
+    bottom: 20vmin;
+    color: #D6E4C8;
+}
+
+#author {
+    position: absolute;
+    bottom: 14vmin;
+    color: #D6E4C8;
+    font-size: 30pt;
+}
+
+#color-block-top,
+#color-block-bottom {
+    width: 100vmax;
+    height: 50vmin;
+    position: absolute;
+
+}
+
+#color-block-top {
+    background-color: #D6E4C8;
+    top: 0;
+    left: 0;
+}
+
+#color-block-bottom {
+    background-color: #121212;
+    bottom: 0;
+    left: 0;
+}
+
+.fa-chevron-up {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+.section .dark {
+    color: #D6E4C8;
+}
+
+.section .light {
+    color: #121212;
+}
+
+.dark-bg {
+    background-color: #121212;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vmax;
+    height: 100vmin;
+}
+
+.light-bg {
+    background-color: #D6E4C8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vmax;
+    height: 100vmin;
+}
+
+.dark h2 {
+    color: #D6E4C8;
+    position: absolute;
+    z-index: 1;
+    top: 40vmin;
+}
+
+.light h2 {
+    color: #121212;
+    position: absolute;
+    z-index: 1;
+    top: 40vmin;
+}
