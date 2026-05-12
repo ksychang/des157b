@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capstone Proposal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/TextPlugin.min.js"></script>
+
+    <style>
+        body {
+            margin: 10vmin 15vmax;
+            font-family: 'Instrument Serif';
+            font-size: 16pt;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #121212;
+            color: #D6E4C8;
+        }
+
+        div {
+            display: flex;
+            gap: 20px;
+        }
+
+        p {
+            width: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1></h1>
+    <div>
+        <p id="p1"></p>
+        <p id="p2"></p>
+        <p id="p3"></p>
+    </div>
+
+</body>
+<script>
+    (function () {
+        gsap.registerPlugin(TextPlugin);
+        const text = "capstone proposal";
+        const textElement = document.querySelector("h1");
+        gsap.to(textElement, {
+            duration: 2,
+            text: text,
+            ease: "none"
+        });
+
+        const p_texts = [
+            "My capstone project will be based on the concept of utopian versus dystopian perspectives on the current and future state of the world. I will be creating a website that illustrates this subtle yet powerful difference in perspective by utilizing Jonathan Reed's poem &quot;The Lost Generation&quot; as a central piece of content. The website will be designed to evoke emotions and provoke thought about the state of the world, encouraging visitors to reflect on their own perspectives and the impact they have on their lives and the lives of others. Through a combination of visual elements and interactive features, via the FullPage.js and GSAP libraries, the website will allow users to explore the difference between utopian and dystopian viewpoints of the same world, ultimately fostering a deeper understanding of the complexities and nuances of our current and future reality.",
+
+            "Some of the key features of the website will include both interactive and static typographical elements that will help the meaning of each line of the poem come to life. While I have not yet fully developed the design and layout of the website, I plan to create a visually engaging experience that will encourage visitors to explore the content and reflect on the themes presented in the poem. I hope to develop some interactive animations that evoke delight and wonder, while also incorporating more somber and thought-provoking elements that will encourage visitors to reflect on the darker aspects of our current and future reality. I also plan to apply a critical use of color to enhance the emotional impact of the website. Overall, my goal is to create a website that will inspire visitors to think critically about their perspective on the world and how it impacts the people in their lives.",
+
+            "My target audience will primarily be individuals who are interested in exploring different perspectives on the world and who are open to engaging with thought-provoking content. This could include students, educators, and anyone who is interested in exploring the complexities of our current and future reality. I hope that my website will be accessible to a wide range of people, regardless of their background or level of expertise, and that it will encourage visitors to reflect on their own perspectives and the impact they have on the world around them."
+        ]
+
+        let index = 0;
+        const paragraphs = document.querySelectorAll("p");
+        paragraphs.forEach((paragraph) => {
+            gsap.to(paragraph, {
+                duration: 10,
+                delay: 2 + index * 0.5,
+                opacity: 1,
+                ease: "power2.out",
+                text: p_texts[index++]
+            })
+        })();
+    })();
+
+</script>
+
+</html>
