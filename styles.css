@@ -90,11 +90,6 @@
     font-style: italic;
 }
 
-/* h3,
-a {
-    font-family: "Handlee", cursive;
-} */
-
 /* BASIC STRUCTURE */
 .visible {
     visibility: visible;
@@ -115,7 +110,6 @@ body {
     flex-direction: column;
     justify-content: space-around;
     margin: 0;
-    /* background-image: url(images/paper-texture.jpg); */
     background-color: #FFFDFF;
     font-family: "Caveat";
 }
@@ -193,7 +187,6 @@ h2 {
     overflow: hidden;
     white-space: nowrap;
     border-right: 3px solid;
-    /* The cursor */
     width: 0;
     max-width: fit-content;
     animation:
@@ -230,4 +223,63 @@ h2 {
     top: 0;
     z-index: -1;
     width: 100vmax;
+}
+
+/* ── MOBILE: 600px and below ── */
+@media (max-width: 600px) {
+
+    html,
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    body {
+        height: auto;
+        min-height: 100vh;
+        justify-content: flex-start;
+    }
+
+    header {
+        width: 100%;
+        height: auto;
+        padding: 16px 0;
+        gap: 8px;
+    }
+
+    #name h1 {
+        font-size: 2.4rem;
+        text-align: center;
+    }
+
+    #gif img {
+        width: 100%;
+        position: relative;
+        top: 1vmax;
+    }
+
+    section {
+        flex-direction: column;
+        padding: 6vw 8vw 12vw;
+        gap: 8px;
+    }
+
+    section>div {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+        margin-top: 24px;
+        margin-bottom: 4px;
+    }
+
+    li a {
+        font-size: 16pt;
+        line-height: 26pt;
+    }
+
+    #toggle {
+        font-size: 14pt;
+    }
 }
