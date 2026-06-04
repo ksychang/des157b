@@ -101,6 +101,24 @@
     document.addEventListener("DOMContentLoaded", (event) => {
         gsap.registerPlugin(TextPlugin)
         // gsap code here!
+        // gsap.to("#lost", {
+        //     duration: 2,
+        //     text: "LOST",
+        //     ease: "none",
+        // });
+
+        // gsap.to(document.querySelector('#generation'), {
+        //     duration: 2,
+        //     text: "GENERATION",
+        //     ease: "none",
+        // });
+
+        // gsap.to(document.querySelector('#author'), {
+        //     duration: 2,
+        //     text: "excerpt by Jonathan Reed",
+        //     ease: "none",
+        // });
+
         const poem = [
             'I am part of a lost generation',
             'and I refuse to believe that',
@@ -119,8 +137,6 @@
             'And all of this will come true unless we choose to REVERSE IT.'
         ]
 
-        // const dark_lines = document.querySelectorAll('.poem .dark h2');
-        // const light_lines = document.querySelectorAll('.poem .light h2');
         const lines = document.querySelectorAll('.poem h2');
         const sections = document.querySelectorAll('.section');
         let i = 0, j = 0;

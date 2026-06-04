@@ -16,10 +16,22 @@ body {
 }
 
 h1,
-h2 {
+h2,
+p {
     width: 100vmax;
     text-align: center;
     left: 0;
+}
+
+p {
+    position: absolute;
+    bottom: 2vmin;
+    font-size: 12pt;
+    color: #D6E4C8;
+}
+
+a {
+    color: #D6E4C8;
 }
 
 #lost {
@@ -46,7 +58,6 @@ h2 {
     width: 100vmax;
     height: 50vmin;
     position: absolute;
-
 }
 
 #color-block-top {
@@ -106,4 +117,68 @@ h2 {
     position: absolute;
     z-index: 1;
     top: 40vmin;
+}
+
+/* ── MOBILE: 600px and below ── */
+@media (max-width: 600px) {
+
+    body {
+        font-size: 20pt;
+    }
+
+    h1,
+    h2,
+    p {
+        width: 100vw;
+    }
+
+    #color-block-top,
+    #color-block-bottom {
+        width: 100vw;
+        height: 50vh;
+    }
+
+    #color-block-top {
+        height: 50vh;
+    }
+
+    #color-block-bottom {
+        height: 50vh;
+    }
+
+    #lost {
+        top: 30vh;
+    }
+
+    #generation {
+        bottom: 28vh;
+    }
+
+    #author {
+        font-size: 16pt;
+        bottom: 12vh;
+    }
+
+    p {
+        font-size: 10pt;
+        bottom: 3vh;
+        padding: 0 12px;
+        box-sizing: border-box;
+    }
+
+    .dark-bg,
+    .light-bg {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .dark h2,
+    .light h2 {
+        width: 100vw;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 0 20px;
+        box-sizing: border-box;
+        font-size: 18pt;
+    }
 }
