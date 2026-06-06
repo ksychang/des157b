@@ -1,5 +1,10 @@
 /*********** Basic Resets ************/
-h1, h2, h3, p, ol, li { 
+h1,
+h2,
+h3,
+p,
+ol,
+li {
     margin: 0;
     padding: 0;
 }
@@ -17,11 +22,12 @@ body {
     margin: auto;
 }
 
-header, footer {
-    background: rgb(153,233,5);
-    background: linear-gradient(157deg, rgba(153,233,5,1) 0%, rgba(245,251,114,1) 100%);
+header,
+footer {
+    background: rgb(153, 233, 5);
+    background: linear-gradient(157deg, rgba(153, 233, 5, 1) 0%, rgba(245, 251, 114, 1) 100%);
     position: fixed;
-    top:0;
+    top: 0;
     left: 0;
     height: 75px;
     width: 100%;
@@ -30,12 +36,15 @@ header, footer {
     box-shadow: 0px 0px 15px 0px #727272;
     z-index: 100;
 }
+
 footer {
     top: auto;
     bottom: 0;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: 'Baloo', cursive;
     font-weight: 400;
 }
@@ -47,12 +56,14 @@ header h1 {
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
-    text-shadow: 0px 3px 3px rgba(255,255,255,0.5);
+    text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.5);
 }
+
 .fa-at {
     font-size: 32px;
     color: #dd00ff;
 }
+
 main {
     padding: 0 20px;
 }
@@ -78,20 +89,22 @@ main ol li div {
 }
 
 a {
-    color:#dd00ff;
+    color: #dd00ff;
     text-decoration: none;
 }
 
 .fa-envelope-square {
     font-size: 20px;
-    color:#727272;
+    color: #727272;
 }
-.fa-edit, .fa-times-circle {
+
+.fa-edit,
+.fa-times-circle {
     font-size: 24px;
     position: absolute;
     top: 20px;
     right: 20px;
-    color:#0746a5;
+    color: #0746a5;
 }
 
 .fa-times-circle {
@@ -104,7 +117,7 @@ footer a {
     box-shadow: 0px 0px 8px 0px #b8b8b8;
     padding: 10px;
     width: 75px;
-    background-color:#f0f0f0;
+    background-color: #f0f0f0;
     border-radius: 5px;
     text-align: center;
     color: #0746a5;
@@ -112,9 +125,10 @@ footer a {
 
 /*************** Forms ****************/
 
-#add-friend, #edit-friend {
-    background: rgb(74,183,251);
-    background: linear-gradient(23deg, rgba(74,183,251,1) 0%, rgba(12,111,173,1) 100%);
+#add-friend,
+#edit-friend {
+    background: rgb(74, 183, 251);
+    background: linear-gradient(23deg, rgba(74, 183, 251, 1) 0%, rgba(12, 111, 173, 1) 100%);
     color: #fff;
     box-sizing: border-box;
     padding: 20px;
@@ -134,19 +148,37 @@ footer a {
     border-bottom-right-radius: 10px;
 }
 
-.add-friend-offscreen { bottom: -600px; transition: all 500ms cubic-bezier(0.600, 0.040, 0.980, 0.335); }
-.add-friend-onscreen { bottom: 75px;  transition: all 500ms cubic-bezier(0.075, 0.820, 0.165, 1.000);}
-.edit-friend-offscreen { top: -600px; transition: all 500ms cubic-bezier(0.600, 0.040, 0.980, 0.335); }
-.edit-friend-onscreen { top: 75px; transition: all 500ms cubic-bezier(0.075, 0.820, 0.165, 1.000); }
+.add-friend-offscreen {
+    bottom: -600px;
+    transition: all 500ms cubic-bezier(0.600, 0.040, 0.980, 0.335);
+}
+
+.add-friend-onscreen {
+    bottom: 75px;
+    transition: all 500ms cubic-bezier(0.075, 0.820, 0.165, 1.000);
+}
+
+.edit-friend-offscreen {
+    top: -600px;
+    transition: all 500ms cubic-bezier(0.600, 0.040, 0.980, 0.335);
+}
+
+.edit-friend-onscreen {
+    top: 75px;
+    transition: all 500ms cubic-bezier(0.075, 0.820, 0.165, 1.000);
+}
 
 
 
-label, input {
+label,
+input {
     display: block;
 }
+
 label {
     margin-bottom: 5px;
 }
+
 input {
     box-sizing: border-box;
     padding: 5px;
@@ -170,7 +202,7 @@ input {
     border-left: 2px solid #e9e9e9;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
-    color:#b8b8b8;
+    color: #b8b8b8;
     background-color: #fff;
     padding: 0 5px;
 }
@@ -187,4 +219,11 @@ input {
     border-bottom-left-radius: 0px;
     border-left: none;
     padding: 0 5px;
-} 
+}
+
+.remove {
+    opacity: 0;
+    height: 0;
+    padding: 0;
+    transition: all 1s;
+}
