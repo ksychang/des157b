@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Value</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.37/fullpage.css"
+        integrity="sha512-DdLq8mFhfN4GtvLwX+p4ajHfbKAfAivaAP9zwjMARinZS53ASFB0unNbbKAnYZaEvxeC5W9iBzJaZM9xvM/SOg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- fullPage.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.37/fullpage.js"
+        integrity="sha512-qXOOK+f3BCMGxKkNBRpJIrIB3jBNl/nyMnxFC/zffcTNKodRG7KgIoBjXQbcpssVrbHvuqVlX3iW9sZN81T0+Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/TextPlugin.min.js"></script>
+
+    <!-- tsParticles presets (bundle = engine + preset in one file) -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/@tsparticles/preset-fire@3/tsparticles.preset.fire.bundle.min.js"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/@tsparticles/preset-firefly@3/tsparticles.preset.firefly.bundle.min.js"></script>
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <!-- Custom cursor -->
+    <div id="cursor"></div>
+
+    <div id="fullpage">
+
+        <!-- Title -->
+        <div class="section" data-section-type="title">
+            <div class="light" id="color-block-top"></div>
+            <div class="dark" id="color-block-bottom"></div>
+            <h1 id="lost">REAL</h1>
+            <h1 id="generation">VALUE</h1>
+            <h2 id="author">by Kaitlyn Chang</h2>
+            <p>made with <a href="https://github.com/alvarotrigo/fullPage.js">fullpage.js</a> + <a
+                    href="https://gsap.com/">GSAP</a> + <a href="https://particles.js.org/">tsParticles</a></p>
+        </div>
+
+        <!-- Dark sections (pessimistic) — each gets its own particles canvas -->
+        <div class="section poem dark" data-section-type="dark">
+            <div id="fire-1" class="particles-canvas"></div>
+            <h2></h2>
+        </div>
+        <div class="section poem dark" data-section-type="dark">
+            <div id="fire-2" class="particles-canvas"></div>
+            <h2></h2>
+        </div>
+        <div class="section poem dark" data-section-type="dark">
+            <div id="fire-3" class="particles-canvas"></div>
+            <h2></h2>
+        </div>
+        <div class="section poem dark" data-section-type="dark">
+            <div id="fire-4" class="particles-canvas"></div>
+            <h2></h2>
+        </div>
+        <div class="section poem dark" data-section-type="dark">
+            <div id="fire-5" class="particles-canvas"></div>
+            <h2></h2>
+        </div>
+        <div class="section poem dark" data-section-type="dark">
+            <div id="fire-6" class="particles-canvas"></div>
+            <h2></h2>
+        </div>
+        <div class="section poem dark" data-section-type="dark">
+            <div id="fire-7" class="particles-canvas"></div>
+            <h2></h2>
+        </div>
+        <div class="section poem dark" data-section-type="dark">
+            <div id="fire-8" class="particles-canvas"></div>
+            <h2></h2>
+        </div>
+
+        <!-- Light sections (optimistic) -->
+        <div class="section poem light" data-section-type="light">
+            <div id="fly-1" class="particles-canvas"></div>
+            <h2></h2>
+        </div>
+        <div class="section poem light" data-section-type="light">
+            <div id="fly-2" class="particles-canvas"></div>
+            <h2></h2>
+        </div>
+        <div class="section poem light" data-section-type="light">
+            <div id="fly-3" class="particles-canvas"></div>
+            <h2></h2>
+        </div>
+        <div class="section poem light" data-section-type="light">
+            <div id="fly-4" class="particles-canvas"></div>
+            <h2></h2>
+        </div>
+        <div class="section poem light" data-section-type="light">
+            <div id="fly-5" class="particles-canvas"></div>
+            <h2></h2>
+        </div>
+        <div class="section poem light" data-section-type="light">
+            <div id="fly-6" class="particles-canvas"></div>
+            <h2></h2>
+        </div>
+        <div class="section poem light" data-section-type="light">
+            <div id="fly-7" class="particles-canvas"></div>
+            <h2></h2>
+        </div>
+        <div class="section poem light" data-section-type="light">
+            <div id="fly-8" class="particles-canvas"></div>
+            <h2></h2>
+        </div>
+        <div class="section poem light" data-section-type="light">
+            <div id="fly-9" class="particles-canvas"></div>
+            <h2></h2>
+        </div>
+
+        <!-- Reflective questionnaire -->
+        <div class="section" id="reflect-section" data-section-type="reflect">
+            <div id="reflect-bg"></div>
+            <div id="reflect-inner">
+
+                <h2 id="reflect-title">reflect on your perspective</h2>
+
+                <div class="question-block" id="q1">
+                    <p class="q-text">do you control your thoughts, or do your thoughts control you?</p>
+                    <div class="options">
+                        <button class="opt-btn" data-q="1" data-val="pos">I control my thoughts</button>
+                        <button class="opt-btn" data-q="1" data-val="neg">my thoughts control me</button>
+                        <button class="opt-btn" data-q="1" data-val="neu">a little bit of both</button>
+                    </div>
+                </div>
+
+                <div class="question-block" id="q2">
+                    <p class="q-text">do you believe you have a purpose in life?</p>
+                    <div class="options">
+                        <button class="opt-btn" data-q="2" data-val="pos">yes, I have a purpose</button>
+                        <button class="opt-btn" data-q="2" data-val="neg">not really</button>
+                        <button class="opt-btn" data-q="2" data-val="neu">I'm still figuring it out</button>
+                    </div>
+                </div>
+
+                <div class="question-block" id="q3">
+                    <p class="q-text">the idea that you have real value feels…</p>
+                    <div class="options">
+                        <button class="opt-btn" data-q="3" data-val="pos">something I know for certain</button>
+                        <button class="opt-btn" data-q="3" data-val="neg">hard to believe most of the time</button>
+                        <button class="opt-btn" data-q="3" data-val="neu">true in theory, but easy to forget</button>
+                    </div>
+                </div>
+
+                <!-- Shown after all 3 questions are answered -->
+                <div id="results">
+                    <div id="reflection-note"></div>
+
+                    <div id="universe-form">
+                        <div id="universe-input">
+                            <label for="universe-msg">send a message to the universe —</label>
+                            <textarea id="universe-msg" rows="2" placeholder="I know my real value because…"></textarea>
+                            <button id="send-btn">send it</button>
+                        </div>
+                        <p id="sent-msg"></p>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
